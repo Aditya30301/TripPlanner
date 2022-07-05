@@ -115,7 +115,7 @@ print("Best AirBNB price (inc. of Taxes)-"+str(data))
 
 print("------------------------Location of Your Hotel--------------------------------")
 
-mymap=folium.Map(
+'''mymap=folium.Map(
     location=[float(data7["results"][0]["lat"]),int(data7["results"][0]["lng"])],
     zoom_start=12
     )
@@ -126,7 +126,7 @@ folium.Marker(
 ).add_to(mymap)
 
 mymap
-
+'''
 
 # In[ ]:
 
