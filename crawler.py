@@ -7,16 +7,18 @@
 import requests
 import json
 import folium
+import datetime
 
 
-checkin=str(input("Enter the date when you leave -YYYY-MM-DD-"))
-checkout=str(input("Enter the date you come back-YYYY-MM-DD-"))
-adults=str(input("Enter the no. of adults-"))
-children=str(input("Enter the no. of childrens-"))
-infants=str((input("Enter the no. of infants-")))
 
-name1=str(input("Enter the location you want to visit-"))
-name2=str(input("Enter the location you are in right now-"))
+checkin=str(datetime.date.today())
+checkout=str(datetime.date.today()+datetime.timedelta(days=5))
+adults=str(2)
+children=str(0)
+infants=str(0)
+
+name1='Paris'
+name2='Hyderabad'
 
 print("--------------------------------------------------------")
 print("*hold on tight fetching your Airport Details*")
